@@ -2108,10 +2108,12 @@ img.zoom {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
+	padding: 2rem 0 0 0;
+
 }
 
 .read-more a {
-	background: #000;
+	background: #8B1980;
 	width: 206px;
 	text-transform: uppercase;
 	color: #fff;
@@ -2121,10 +2123,12 @@ img.zoom {
 	font-size: 17px;
 	line-height: 30px;
 	margin-top: -27px;
+	border-radius: 1rem ;
+
 }
 
 .read-more a:hover {
-	background: #0fc690;
+	background: #FFE16C;
 }
 
 
@@ -2655,4 +2659,30 @@ header .navbar {
 
 .contenedorlogo .logoimagen{
 	width: 100%;
+}
+
+.separador{
+	height: 50vh;
+	background-image: url(../images/separador.jpg);
+	background-size: cover;
+	background-position: bottom;
+	text-align: center;
+	padding: 4rem 0 0 0;
+
+}
+
+.separador h3{
+	font-family: 'Poppins', sans-serif;
+	font-size: 3rem;
+	font-weight: 700;
+	color: #8B1980;
+
+}
+
+#detalle {
+	background-color: #D8B9DC;
+}
+
+#detalle p{
+	color: #fff;
 }
