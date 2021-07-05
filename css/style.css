@@ -45,7 +45,7 @@ html {
 
 body {
 	color: #666666;
-	font-size: 14px;
+	font-size: 1rem;
 	font-family: 'poppins', sans-serif;
 	line-height: 1.80857;
 	font-weight: normal;
@@ -1796,7 +1796,6 @@ input[type="radio"] .styled:checked+label::after {
 
 .about .img-box {
 	text-align: center;
-	padding: 6rem 0 0 0;
 }
 
 .about .titlepage {
@@ -1810,7 +1809,7 @@ input[type="radio"] .styled:checked+label::after {
 
 .about .img-box img{
 	margin: 0;
-	height: 90%;
+	width: 100%;
 }
 
 .about .titlepage a {
@@ -1844,15 +1843,33 @@ input[type="radio"] .styled:checked+label::after {
 .service {
 	padding-top: 5rem;
 	padding-bottom: 5rem;
-	background: #f4f4f4;
+	background: #FAEEFF;
 }
 
 .service .titlepage span {
 	color: # 3d3c3c
 }
 
+.service .service-box {
+	background-image: url(../images/fondo4.png);
+	background-size: contain;
+	background-position: center top;
+	background-repeat: no-repeat;
+
+
+}
+
+
 .service .service-box figure {
 	margin: 0px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.service .service-box figure div{
+ width: 50%;
 }
 
 .service .service-box figure img {
@@ -1865,7 +1882,6 @@ input[type="radio"] .styled:checked+label::after {
 }
 
 .service .service-box .hoverle {
-	position: absolute;
 	top: 0;
 	left: 0;
 	right: 0;
@@ -1874,13 +1890,14 @@ input[type="radio"] .styled:checked+label::after {
 	justify-content: center;
 	align-items: center;
 	margin: 0 5px;
+	padding-top: 2rem;
+
 }
 
 .service .service-box .hoverle a {
 	font-size: 2rem;
 	font-family: 'Nunito', sans-serif;
 	font-weight: 600;
-	padding: 5px 5px;
 	color: #fff;
 }
 
@@ -1888,22 +1905,23 @@ input[type="radio"] .styled:checked+label::after {
 	font-family: 'Nunito', sans-serif;
 	font-size: 1.5rem;
 	font-weight: 700;
-	padding: 5px 5px;
 	color: #fff;
+	padding: 0 2rem 0 2rem;
 }
 
 .service .service-box .hoverle p {
 	font-family: 'Poppins', sans-serif;
 	font-size: 1rem;
 	font-weight: 300;
-	padding: 5px 30px;
-	color: #8B1980;
+	color: #fff;
+	padding: 0 2rem 0 2rem;
 }
+
+
 
 
 .service .titlepage {
 	text-align: center;
-	padding-bottom: 50px;
 	padding: 0 10rem 2rem 10rem;
 }
 
@@ -1911,7 +1929,6 @@ input[type="radio"] .styled:checked+label::after {
 	padding: 0px 0px 6px 0px;
 	font-size: 2.5rem;
 	font-weight: 600;
-	width: 50%;
 	color: #8B1980;
 	line-height: 46px;
 	border-bottom: #8B1980 solid 1px;
@@ -1920,43 +1937,51 @@ input[type="radio"] .styled:checked+label::after {
 	margin-bottom: 20px;
 }
 
+
+
+.service .service-box:hover img{
+	visibility: hidden;
+}
+
+
+
 .service .service-box:hover .hoverle {
-	position: absolute;
 	top: 0;
 	left: 0;
 	right: 0;
 	bottom: 0;
 	text-align: center;
 	justify-content: center;
-	background: rgb(255, 225, 108, 0.80);
 	align-items: center;
 	margin: 0 5px;
+	padding-top: 2rem;
+
 }
 
 .service .service-box:hover .hoverle a {
-	font-size: 4rem;
+	font-size: 3rem;
 	font-family: 'Nunito', sans-serif;
 	font-weight: 600;
 	background: transparent;
-	padding: 5px 5px;
-	color: #fff;
+	color: #8B1980;
 }
 
 .service .service-box:hover .hoverle h3 {
 	font-family: 'Nunito', sans-serif;
 	font-size: 3rem;
 	font-weight: 700;
-	padding: 5px 5px;
-	color: #fff;
+	color: #8B1980;
 }
 
 .service .service-box:hover .hoverle p {
 	font-family: 'Poppins', sans-serif;
-	font-size: 1.5rem;
+	font-size: 1rem;
 	font-weight: 400;
-	padding: 5px 30px;
+	padding: 0 3.2rem 0 3.2rem;
 	color: #8B1980;
 }
+
+
 
 
 /** gallery section css **/
@@ -1979,7 +2004,7 @@ input[type="radio"] .styled:checked+label::after {
 	margin-top: 85px;
 }
 
-img.zoom {
+span.zoom {
 	width: 100%;
 	object-fit: cover;
 	-webkit-transition: all .3s ease-in-out;
@@ -2014,12 +2039,60 @@ img.zoom {
 /** end service section **/
 
 
+/** suscripcion section **/
+
+
+.contenedorsuscripcion .hoverlesuscripcion{
+	padding: 1rem 0 0 0;
+
+}
+
+.contenedorsuscripcion figure {
+	margin: 0px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+img.zoom{
+	width: 100%;
+	object-fit: cover;
+	-webkit-transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out;
+	-o-transition: all .5s ease-in-out;
+	-ms-transition: all .5s ease-in-out;	
+
+}
+
+
+.contenedorsuscripcion h3 {
+	font-family: 'Nunito', sans-serif;
+	font-size: 1.5rem;
+	font-weight: 700;
+	color: #8B1980;
+	padding: 0 1rem 0 1rem;
+}
+
+.contenedorsuscripcion p {
+	font-family: 'Poppins', sans-serif;
+	font-size: 1rem;
+	font-weight: 300;
+	color: #8B1980;
+	padding: 0 1rem 2rem 1rem;
+}
+
+
+
+/** end suscripcion section **/
+
 /** download section **/
 
 .download {
 	padding-top: 90px;
 	padding-bottom: 90px;
-	background: #fff;
+	background: #D8B9DC;
 }
 
 .download .titlepage {
@@ -2058,11 +2131,10 @@ img.zoom {
 }
 
 .download .carousel-item .imagencontenedor{
-	height: 70vh;
 }
 
 .download .carousel-item img{
-	height: 90%;
+	width: 100%;
 }
 
 
@@ -2131,11 +2203,17 @@ img.zoom {
 	background: #FFE16C;
 }
 
+.opinionrow {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 2rem 0 2rem;
+}
 
 /** end download section **/
 
 .testimonial {
-	background: #0fc690;
+	background: linear-gradient(#D8B9DC, #8B1980);
 	padding: 60px 0px;
 }
 
@@ -2145,18 +2223,20 @@ img.zoom {
 
 .testimonial .titlepage h3 {
 	padding: 0px 0px 6px 0px;
-	font-size: 30px;
-	font-weight: bold;
+	font-size: 2rem;
+	font-weight: 600;
 	color: #fff;
 	line-height: 46px;
 	border-bottom: #fff solid 1px;
-	width: 184px;
 	margin: 0 auto;
-	margin-bottom: 60px;
+	margin-bottom: 0px;
+	margin-bottom: 20px;
 }
 
+
+
 .banner-bg {
-	background: #fff;
+	background: #D8B9DC;
 }
 
 .relat {
@@ -2173,59 +2253,64 @@ img.zoom {
 }
 
 .carousel-caption.relat h3 {
-	color: #0fc690;
-	font-size: 20px;
+	font-family: 'Poppins', sans-serif;
+	color: #8B1980;
+	font-size: 1.5rem;
 	text-transform: uppercase;
 	line-height: 20px;
-	padding-bottom: 5px;
+	padding-bottom: 0.5rem;
+	font-weight: 700;
 }
 
 .carousel-caption.relat span {
-	color: #121514;
-	font-size: 16px;
+	font-family: 'Poppins', sans-serif;
+	color: #8B1980;
+	font-size: 1rem;
 	text-transform: uppercase;
-	padding-bottom: 5px;
+	padding-bottom: 1rem;
 	display: inline-block;
+	font-weight: 600;
 }
 
 .carousel-caption.relat p {
-	color: #121514;
+	color: #8B1980;
 }
 
 #testimonial_slider .carousel-control-prev:hover,
 #testimonial_slider .carousel-control-next:hover,
 #testimonial_slider .carousel-control-prev:focus,
 #testimonial_slider .carousel-control-next:focus {
-	color: #fff;
-	background: #0fc690;
+	color: #8B1980;
+	background: #FFE16C;
 	width: 50px;
 	height: 50px;
 }
 
 #testimonial_slider a.carousel-control-prev {
 	position: absolute;
-	top: 35%;
-	color: #fff;
-	background: #000;
+	top: 50%;
+	color: #FAEEFF;
+	background: #8B1980;
 	width: 50px;
 	height: 50px;
 	opacity: 1;
+	right: 0;
 }
 
 #testimonial_slider a.carousel-control-next {
 	position: absolute;
-	top: 46%;
-	color: #fff;
-	background: #000;
+	top: 50%;
+	color: #FAEEFF;
+	background: #8B1980;
 	width: 50px;
 	height: 50px;
 	float: left;
-	left: 0px;
+	left: 0;
 	opacity: 1;
 }
 
 .testimonial .contact h3 {
-	color: #000;
+	color: #8B1980;
 	font-size: 30px;
 	font-weight: bold;
 	text-align: center;
@@ -2237,13 +2322,15 @@ img.zoom {
 	width: 100%;
 	height: 100%;
 	padding: 30px;
+	border-radius: 2rem;
+
 }
 
 .testimonial .contact .contactus {
 	border: #b1b0b0 solid 1px;
 	padding: 12px 19px;
 	margin-bottom: 26px;
-	border-radius: inherit;
+	border-radius: 2rem;
 	color: #000;
 	width: 100%;
 }
@@ -2254,15 +2341,19 @@ img.zoom {
 	color: #000 !important;
 	width: 100%;
 	border: #b1b0b0 solid 1px;
-	border-radius: inherit;
+	border-radius: 2rem;
 }
 
 .testimonial .contact .send {
-	font-size: 16px;
-	border: #000 solid 1px;
+	font-family: 'Nunito', sans-serif;
+	font-size: 1.1rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	border: #8B1980 solid 1px;
+	border-radius: 1rem;
 	padding: 10px 50px;
-	background-color: #000;
-	color: #fff;
+	background-color: #8B1980;
+	color: #FAEEFF;
 	display: flex;
 	justify-content: center;
 	margin: 0 auto;
@@ -2270,10 +2361,12 @@ img.zoom {
 	flex-wrap: wrap;
 }
 
+
+
 .testimonial .contact .send:hover {
-	background-color: #0fc690;
-	border: #0fc690 solid 1px;
-	color: #fff;
+	background-color: #FFE16C;
+	border: #FFE16C solid 1px;
+	color: #8B1980;
 }
 
 .width {
@@ -2281,20 +2374,25 @@ img.zoom {
 }
 
 .footer {
-	background: #023023;
-	padding-top: 55px;
+	background: #8B1980;
+	padding: 2rem 1rem 2.5rem 1rem;
 }
 
 .footer .address h3 {
-	color: #fff;
+	color: #FAEEFF;
 	font-size: 25px;
 	line-height: 35px;
 	font-weight: 500;
 	padding-bottom: 20px;
 }
 
+.footer .address p {
+	color: #FAEEFF;
+} 
+
+
 .footer .address i {
-	color: #fff;
+	color: #FAEEFF;
 	font-size: 15px;
 	font-weight: 500;
 }
@@ -2331,13 +2429,13 @@ img.zoom {
 	border: #000000 solid 2px;
 	padding: 16px 70px;
 	background-color: #000000;
-	color: #fff;
+	color: #FAEEFF;
 }
 
 .send-btn:hover {
 	background-color: #ff0000;
 	border: #ff0000 solid 2px;
-	color: #fff;
+	color: #FAEEFF;
 }
 
 ul.contant_icon {
@@ -2364,7 +2462,7 @@ ul.contant_icon li img {
 }
 
 .footer .newsletter h3 {
-	color: #fff;
+	color: #FAEEFF;
 	font-size: 17px;
 	line-height: 30px;
 	display: block;
@@ -2384,37 +2482,37 @@ ul.contant_icon li img {
 	border: #ddd solid 1px !important;
 }
 
+
+
 .footer .address .submit-btn {
-	padding: 5px 29px;
-	border: #0fc690 solid 1px;
-	background: #0fc690;
-	color: #fff;
-	font-weight: 500;
-	font-size: 20px;
+	border: #FFE16C solid 1px;
+	background: #FFE16C;
+	color: #8B1980;
+	font-weight: 700;
+	font-family: 'Nunito', sans-serif;
+	font-size: 1.1rem;
+	text-transform: uppercase;
+	border-radius: 1rem;
+	padding: 10px 50px;
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.footer .address .submit-btn a{
+	text-decoration: none;
+	color: #8B1980;
+
 }
 
 .footer .address .submit-btn:hover {
-	background: #000;
-	border: #000 solid 1px;
+	background: #D8B9DC;
+	border: #D8B9DC solid 1px;
 }
 
-.copyright {
-	background-color: #fff;
-	padding: 20px 0px;
-	;
-	margin-top: 55px;
-}
 
-.copyright p {
-	color: #000;
-	font-size: 18px;
-	line-height: 22px;
-	text-align: center;
-}
-
-.copyright a:hover {
-	color: #0fc690
-}
 
 
 /*---------------------------------------------------------------------
@@ -2525,7 +2623,7 @@ header {
     transition: all 0.3s ease-in-out 0s;
 }
 header .navbar {
-	padding: 20px 0px;
+	padding: 1rem 0;
 }
 .background-header .navbar {
 	padding: 10px 0px;
@@ -2630,6 +2728,7 @@ header .navbar {
 	background-image: url('../images/header1.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
+	background-position: left bottom;
 	width: 100%;
 	height: 100vh;
 
@@ -2639,6 +2738,7 @@ header .navbar {
 	background-image: url('../images/header2.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
+	background-position: left bottom;
 	width: 100%;
 	height: 100vh;
 
@@ -2647,6 +2747,7 @@ header .navbar {
 .carouseltres {
 	background-image: url('../images/header3.jpg');
 	background-size: cover;
+	background-position: left bottom;
 	background-repeat: no-repeat;
 	width: 100%;
 	height: 100vh;
@@ -2654,19 +2755,19 @@ header .navbar {
 }
 
 .contenedorlogo {
-	width: 8%;
+	width: 20%;
 }
 
 .contenedorlogo .logoimagen{
 	width: 100%;
 }
 
-.separador{
-	height: 50vh;
+#separador{
 	background-image: url(../images/separador.jpg);
 	background-size: cover;
 	background-position: bottom;
 	text-align: center;
+	background-repeat: no-repeat;
 	padding: 4rem 0 0 0;
 
 }
@@ -2685,4 +2786,236 @@ header .navbar {
 
 #detalle p{
 	color: #fff;
+}
+
+.lucia{
+	display: flex;
+	align-items: center;
+}
+
+#comofunciona {
+}
+
+.detallebox1 {
+	background-image: url(../images/fondo1.png);
+	background-size: contain;
+	background-position: center top;
+	background-repeat: no-repeat;
+
+
+}
+
+.detallebox2 {
+	background-image: url(../images/fondo2.png);
+	background-size: contain;
+	background-position: center top;
+	background-repeat: no-repeat;
+
+
+}
+
+.detallebox3 {
+	background-image: url(../images/fondo3.png);
+	background-size: contain;
+	background-position: center top;
+	background-repeat: no-repeat;
+
+
+}
+
+.detallebox figure {
+	margin: 0.3rem;
+	text-align: center;
+	padding: 1.5rem 2rem 4rem 2rem;
+
+}
+
+.detallebox figure p{
+	margin: 0px;
+	padding: 0.5rem 2rem 0 2rem;
+}
+
+
+.rowdetalle {
+	align-items: stretch;
+	margin: 1rem 0rem 1rem 0;
+}
+
+.detalle {
+	padding-top: 1.5rem;
+	padding-bottom: 1rem;
+	background: #FAEEFF;
+}
+
+.detalle .detallebox h3 {
+	font-family: 'Nunito', sans-serif;
+	font-size: 1.5rem;
+	font-weight: 700;
+	color: #8B1980;
+	padding: 0 2rem 0 2rem;
+}
+
+.detalle .detallebox p {
+	font-family: 'Poppins', sans-serif;
+	font-size: 1rem;
+	font-weight: 300;
+	color: #8B1980;
+	padding: 0 2rem 0 2rem;
+}
+
+#detalle {
+	padding: 6rem 0 2rem 0;
+}
+
+.textodetalle {
+	text-align: center;
+	padding: 8rem 2rem 6rem 2rem;
+	justify-content: center;
+}
+
+.textodetalle h2 {
+	padding: 0px 0px 6px 0px;
+	font-size: 2.5rem;
+	font-weight: 600;
+	width: 100%;
+	color: #8B1980;
+	line-height: 46px;
+	border-bottom: #8B1980 solid 1px;
+	margin: 0 auto;
+	margin-bottom: 0px;
+}
+
+.textodetalle h3 {
+	padding: 0px 0px 6px 0px;
+	font-size: 1.8rem;
+	font-weight: 500;
+	width: 100%;
+	color: #8B1980;
+	line-height: 46px;
+	margin: 0 auto;
+	margin-bottom: 0px;
+}
+
+
+.textodetalle p {
+	color: #8B1980;
+	font-size: 1.3rem;
+	line-height: 30px;
+	padding: 0 0 1.5rem 0;
+}
+
+.textodetalle a {
+	text-transform: uppercase;
+	border: #8B1980 solid 1px;
+	border-radius: 1rem;
+	background: #8B1980;
+	width: 206px;
+	padding: 15px 0;
+	display: inline-block;
+	font-weight: 500;
+	font-size: 1rem;
+	line-height: 30px;
+	color: #fff;
+}
+
+.textodetalle a:hover {
+	border: #FFE16C solid 1px;
+	border-radius: 1rem;
+	background: #FFE16C;
+	font-size: 1.3rem;
+
+}
+
+.copy{
+	width: 100%;
+}
+
+
+#suscripcion .hoverlesuscripcion a {
+	text-transform: uppercase;
+	border: #8B1980 solid 1px;
+	border-radius: 1rem;
+	background: #8B1980;
+	width: 206px;
+	padding: 15px 0;
+	display: inline-block;
+	font-weight: 500;
+	font-size: 1rem;
+	line-height: 30px;
+	color: #fff;
+}
+
+#suscripcion .hoverlesuscripcion a:hover {
+	border: #FFE16C solid 1px;
+	border-radius: 1rem;
+	background: #FFE16C;
+	font-size: 1.3rem;
+
+}
+
+.textoseparador h2 {
+	padding: 0 4rem 0 4rem;
+	font-family: 'Nunito', sans-serif;
+	font-size: 2.5rem;
+	font-weight: 600;
+	color: #8B1980;
+	line-height: 46px;
+	margin: 0 auto;
+	margin-bottom: 0px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.final h3  {
+	padding: 0 4rem 0 4rem;
+	font-family: 'Poppins', sans-serif;
+	font-size: 4rem;
+	font-weight: 600;
+	color: #8B1980;
+	line-height: 4rem;
+	margin: 0 auto;
+	margin-bottom: 0px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.final p {
+	color: #FAEEFF;
+	font-size: 2rem;
+	line-height: 30px;
+	padding: 0 0 1.5rem 0;
+}
+
+
+.final {
+	margin: 0px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+
+.final a {
+	text-transform: uppercase;
+	border: #8B1980 solid 1px;
+	border-radius: 1rem;
+	background: #8B1980;
+	width: 206px;
+	padding: 15px 0;
+	display: inline-block;
+	font-weight: 500;
+	font-size: 1rem;
+	line-height: 30px;
+	color: #fff;
+	text-align: center;
+}
+
+.final a:hover {
+	border: #FFE16C solid 1px;
+	border-radius: 1rem;
+	background: #FFE16C;
+	font-size: 1.3rem;
+
 }
