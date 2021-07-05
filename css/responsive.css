@@ -245,6 +245,15 @@
         padding: 21px 0;
         width: 113px;
     }
+    .carousel-caption {
+        position: absolute;
+        text-align: left;
+        width: 40%;
+        right: inherit;
+        left: 5%;
+        z-index: inherit;
+
+    }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -288,6 +297,17 @@
     ul.contant_icon {
         margin-bottom: 20px;
     }
+
+
+    .carousel-caption {
+        position: absolute;
+        text-align: left;
+        width: 40%;
+        right: inherit;
+        left: 5%;
+        z-index: inherit;
+
+    }
 }
 
 @media (max-width: 575px) {
@@ -319,7 +339,8 @@
     .banner-main .carousel-caption p {
         font-size: 17px;
         padding: 7px 0px 20px 0px;
-        display: none;
+        color: #8B1980;
+        line-height: 1.5rem;
     }
     .carousel-item img {
         width: 100%;
@@ -381,5 +402,14 @@
     }
     ul.contant_icon {
         margin-bottom: 20px;
+    }
+    .carousel-caption {
+        position: absolute;
+        text-align: left;
+        width: 40%;
+        right: inherit;
+        left: 5%;
+        z-index: inherit;
+
     }
 }
