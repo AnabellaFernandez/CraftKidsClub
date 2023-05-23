@@ -3020,7 +3020,7 @@ header .navbar {
 
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+!important @media (min-width: 992px) and (max-width: 1199px) {
     .main-menu ul>li a {
         padding: 7px 20px 0 20px;
     }
